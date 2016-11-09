@@ -1,0 +1,44 @@
+﻿header {
+    font-family: Calibri;
+    font-size: 36px;
+    padding: 10px;
+    background-color: gold;
+    border: 7px solid;
+    text-align: center;
+    border-radius: 10px;
+}
+body {
+    background-color:silver;
+}
+#info {
+    margin-top: 2px;
+    text-align: left;
+    background-color: #FFE554;
+    border: solid;
+    padding: 50px;
+    border-radius: 10px;
+    font-family: calibri;
+    height:auto;
+}
+table {
+    width:100%;
+    height:10%;
+    border:7px solid silver;
+    margin-top:2px;
+    border-radius: 10px;
+}
+td {
+    width:33%;
+    font-size:35px;
+    text-align:center;
+    background-color:gold;
+    border-right-width:thick;
+    border:10px solid black;
+    border-radius: 20px;
+}
+#c2 {
+    text-align:left;
+}
+#c3 {
+	text-align:center;
+}

@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Мозамбик</title>
+    <link rel="stylesheet" type="text/css" href="menu.css" />
+    <script src="menu.js"></script>
+
+</head>
+<body>
+    <header>Мозамбик</header>
+<table>
+   <tr>
+        <td onclick="show_textpic()">Общая информация</td>
+        <td onclick="show_test()">Викторина</td>
+        <td onclick="show_map()">Карта</td>
+   </tr>
+</table>
+    <div id="info">
+        <div id="c1">
+            <center><img height="70%" width="90%" src="1.jpg"></center>
+            <h2>
+                    Республика Мозамбик — государство в Юго-Восточной Африке<br />
+                    Территория Мозамбика простирается вдоль побережья Индийского океана примерно на 3000 км.<br />
+                    Согласно Конституции, государственный строй Мозамбика — республика.<br />
+                    Численность населения — 25,7 млн (оценка на 2015).<br />
+                    Природные ресурсы — уголь, титан, тантал, газ, гидроэнергия.<br />
+                    Экспорт: 2,7 млрд долл. (в 2008) — алюминий, креветки, кешью, хлопок, сахар, цитрусовые, лесоматериалы.<br />
+                    Основные покупатели: Нидерланды 55,5 %, ЮАР 9,2 %, Зимбабве 2,1 % (в 2008).<br />
+                    Импорт: 3,5 млрд долл. (в 2008) — продукция машиностроения, транспортные средства, топливо, химическая продукция, продовольствие, текстиль.<br />
+                    Основные поставщики: ЮАР 27,4 %, Нидерланды 15,7 %, Китай 4,3 % (в 2008).<br />
+            </h2>
+        </div>
+        <div id="c2" style="display:none;">
+            <center><b><h1>Викторина</b></h1></center>
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <span style="color:#006699;text-decoration:underline;cursor:pointer;" onclick="document.getElementById('instruction').style.display = showhide(document.getElementById('instruction').style.display)">
+                Инструкция
+            </span>
+            <br />
+            <div id="instruction" style="display: none; width: 100%;">
+                <ul>
+                    <li>Выберите один из вариантов в каждом из 3 вопросов;</li>
+                    <li>Нажмите на кнопку "Показать результат";</li>
+                    <li>Скрипт не покажет результат, пока Вы не ответите на все вопросы;</li>
+                    <li>Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).</li>
+                    <li>За каждый правильный ответ начисляется 1 балл;</li>
+                    <li>Оценки: менее 1.5 баллов - НЕУДОВЛЕТВОРИТЕЛЬНО, от 1.5 но менее 2.25 - УДОВЛЕТВОРИТЕЛЬНО, 2.25 и менее 3 - ХОРОШО, 3 - ОТЛИЧНО;</li>
+                    <li>Чтобы сбросить результат тестирования, нажать кнопку "Сбросить ответы";</li>
+                </ul>
+            </div>
+            <form name="test">
+                <ol>
+                    <li>
+                        <INPUT type="text" size="1" value="" name="T1" /><b> Кто создал сайт?</b><br />
+                        <input type="radio" value="0" name="Q1" /> Стефан<br />
+                        <input type="radio" value="1" name="Q1" /> Зачем этот вопрос?<br />
+                        <input type="radio" value="2" name="Q1" /> Буратино<br />
+                        <br />
+                    </li>
+                    <li>
+                        <INPUT type="text" size="1" value="" name="T2" /><b> Про какую страну этот сайт</b><br />
+                        <input type="radio" value="0" name="Q2" /> Мазамбик<br />
+                        <input type="radio" value="1" name="Q2" /> Мозамбик<br />
+                        <input type="radio" value="2" name="Q2" /> Мазомбик<br />
+                        <br />
+                    </li>
+                    <li>
+                        <INPUT type="text" size="1" value="" name="T3" /><b> Сколько ячеек в таблице?</b><br />
+                        <input type="radio" value="0" name="Q3" /> 1<br />
+                        <input type="radio" value="1" name="Q3" /> 3<br />
+                        <input type="radio" value="2" name="Q3" /> 10<br />
+                        <br />
+                    </li>
+                </ol>
+                <CENTER>
+                    <P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+                    <INPUT onclick="check_me()" type="button" value="Показать результат" />&nbsp;&nbsp;&nbsp;&nbsp;
+                    <INPUT type="reset" value="Сбросить ответы" />
+                </CENTER>
+            </form>
+        </div>
+        <div id="c3" style="display:none;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7489281.502549931!2d31.75489367544294!3d-19.367838665819956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d4aceae6fd4ac5%3A0x12bbbfb9ae16a115!2z0JzQvtC30LDQvNCx0LjQug!5e0!3m2!1sru!2sru!4v1476561158886" width="800" height="650" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
